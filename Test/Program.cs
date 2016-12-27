@@ -21,7 +21,7 @@ namespace Test
 
             Recordset recordset = db.Query(
                 db.QueryProducer.Table(
-                    "Sheet1$"));
+                    "[Sheet1$]"));
             while (recordset.Read())
             {
                 for (int i = 0; i < recordset.GetFieldCount(); i++)
