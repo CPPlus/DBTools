@@ -21,23 +21,23 @@ namespace DBTools
         {
             return string.Format(
                 @"SELECT 
-                    [{1}], Count(*) 
+                    {1}, Count(*) 
                 FROM 
-                    [{0}] 
+                    {0} 
                 GROUP BY 
-                    [{1}]",
+                    {1}",
                 table, column);
         }
 
         public string Table(string table)
         {
-            return string.Format(@"SELECT * FROM [{0}]", table);
+            return string.Format(@"SELECT * FROM {0}", table);
         }
 
         public string TableRowCount(string table)
         {
             return string.Format(
-                @"SELECT COUNT(*) AS 'Row Count' FROM [{0}]",
+                @"SELECT COUNT(*) AS 'Row Count' FROM {0}",
                 table);
         }
     }
