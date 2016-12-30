@@ -31,6 +31,12 @@ namespace DBTools
             return value;
         }
 
+        public override DateTime? GetDateTime(int column)
+        {
+            DateTime? value = reader.IsDBNull(column) ? null : (DateTime?)reader.GetDateTime(column);
+            return value;
+        }
+
         public override void Close()
         {
             reader.Close();

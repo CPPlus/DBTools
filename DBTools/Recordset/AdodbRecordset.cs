@@ -68,5 +68,10 @@ namespace DBTools
         {
             return recordset.Fields[column].Name;
         }
+
+        public override DateTime? GetDateTime(int column)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

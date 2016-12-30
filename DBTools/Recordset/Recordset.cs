@@ -11,6 +11,7 @@ namespace DBTools
         public abstract int GetFieldCount();
         public abstract bool Read();
         public abstract string GetString(int column);
+        public abstract DateTime? GetDateTime(int column);
         public abstract Type GetFieldType(int column);
         public abstract void Close();
         public abstract string GetFieldName(int column);
