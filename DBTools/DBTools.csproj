@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB\DB.cs" />
-    <Compile Include="DB\ExcelSpreadsheetDB.cs" />
+    <Compile Include="DB\GeneralDB.cs" />
     <Compile Include="DB\PowerPivotDB.cs" />
     <Compile Include="DB\SqlServerDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

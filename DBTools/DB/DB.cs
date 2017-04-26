@@ -11,6 +11,10 @@ namespace DBTools
         public QueryProducer QueryProducer { get; protected set; }
         public abstract void Connect();
         public abstract void Close();
-        public abstract Recordset Query(string query);
+        public abstract Recordset QueryResult(string query);
+        public void Query(string query)
+        {
+            QueryResult(query).Close();
+        }
     }
 }

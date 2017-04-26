@@ -29,7 +29,7 @@ namespace DBTools
             connection.Close();
         }
 
-        override public Recordset Query(string query)
+        override public Recordset QueryResult(string query)
         {
             SqlCommand command = new SqlCommand(query, connection);
             command.CommandTimeout = 0;

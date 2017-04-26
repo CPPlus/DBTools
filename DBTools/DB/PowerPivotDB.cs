@@ -30,7 +30,7 @@ namespace DBTools
 
         }
 
-        override public Recordset Query(string query)
+        override public Recordset QueryResult(string query)
         {
             Connection connection = workbook.Model.DataModelConnection.ModelConnection.ADOConnection;
 
